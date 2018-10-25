@@ -1,14 +1,840 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+  <ion-navbar color="light">
+    <ion-title >
+        <h1>Kids Quiz</h1>
+           </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="img">
+ 
+  <ion-slides #slides>
+
+      <ion-slide>
+
+          <h3>Question 1</h3>
+
+          <flash-card [isFlipped]="flashCardFlipped">
+              <div class="flash-card-front"><img src="./assets/imgs/Helicopter.png" width="100" height="100"/></div>
+              <div class="flash-card-back">Helicopter</div>
+          </flash-card>
+
+          <h3>What is this?</h3>
+
+          <ion-list no-lines radio-group>
+
+              <ion-item>
+
+                  <ion-label>1. Helicopter</ion-label>
+                  <ion-radio (click)="selectAnswer()" [(ngModel)]="Q1"  required></ion-radio>
+
+              </ion-item>
+
+              <ion-item>
+
+                  <ion-label>2. Truck</ion-label>
+                  <ion-radio (click)="selectAnswer()"></ion-radio>
+
+              </ion-item>
+
+              <ion-item>
+
+                  <ion-label>3. Plane</ion-label>
+                  <ion-radio (click)="selectAnswer()"></ion-radio>
+
+              </ion-item>
+
+          </ion-list>
+
+      </ion-slide>
+
+  </ion-slides>
+
+  <ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 2</h3>
+
+        <flash-card [isFlipped]="flashCardFlippe">
+            <div class="flash-card-front"><img src="./assets/imgs/bag.png "  width="100" height="100"/></div>
+            <div class="flash-card-back">School Bag</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.School bag</ion-label>
+                <ion-radio (click)="selectAnswerb()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. Truck</ion-label>
+                <ion-radio (click)="selectAnswerb()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. Plane</ion-label>
+                <ion-radio (click)="selectAnswerb()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 3</h3>
+
+        <flash-card [isFlipped]="flashCardFlipp">
+            <div class="flash-card-front"><img src="./assets/imgs/truck.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">Truck</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1. bag</ion-label>
+                <ion-radio (click)="selectAnswert()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. Truck</ion-label>
+                <ion-radio (click)="selectAnswert()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. Plane</ion-label>
+                <ion-radio (click)="selectAnswert()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 4</h3>
+
+        <flash-card [isFlipped]="flashCardFlippd">
+            <div class="flash-card-front"><img src="./assets/imgs/plane.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">Plane</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1. bag</ion-label>
+                <ion-radio (click)="selectAnswerp()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. Truck</ion-label>
+                <ion-radio (click)="selectAnswerp()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. Plane</ion-label>
+                <ion-radio (click)="selectAnswerp()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 5</h3>
+
+        <flash-card [isFlipped]="flashCardFliped">
+            <div class="flash-card-front"><img src="./assets/imgs/biker.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">biker</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.biker</ion-label>
+                <ion-radio (click)="selectAnswerba()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. Truck</ion-label>
+                <ion-radio (click)="selectAnswerba()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. Plane</ion-label>
+                <ion-radio (click)="selectAnswerba()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+
+
+
+
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 6</h3>
+
+        <flash-card [isFlipped]="flashCardFlipepd">
+            <div class="flash-card-front"><img src="./assets/imgs/boats.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">Boat</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.Truck</ion-label>
+                <ion-radio (click)="selectAnswerbo()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2.Boat</ion-label>
+                <ion-radio (click)="selectAnswerbo()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. Plane</ion-label>
+                <ion-radio (click)="selectAnswerbo()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 7</h3>
+
+        <flash-card [isFlipped]="flashCardFlpped">
+            <div class="flash-card-front"><img src="./assets/imgs/book.png"  width="100" height="100" /></div>
+            <div class="flash-card-back">Books</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.camera</ion-label>
+                <ion-radio (click)="selectAnswerboo()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. Truck</ion-label>
+                <ion-radio (click)="selectAnswerboo()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3.Books </ion-label>
+                <ion-radio (click)="selectAnswerboo()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 8</h3>
+
+        <flash-card [isFlipped]="flashCardFipped">
+            <div class="flash-card-front"><img src="./assets/imgs/camera.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">camera</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.camera</ion-label>
+                <ion-radio (click)="selectAnswerc()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. chair</ion-label>
+                <ion-radio (click)="selectAnswerc()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. Plane</ion-label>
+                <ion-radio (click)="selectAnswerc()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 9</h3>
+
+        <flash-card [isFlipped]="flashCardlipped">
+            <div class="flash-card-front"><img src="./assets/imgs/chair.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">chair</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.Table and chairs</ion-label>
+                <ion-radio (click)="selectAnswerch()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. Truck</ion-label>
+                <ion-radio (click)="selectAnswerch()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. Plane</ion-label>
+                <ion-radio (click)="selectAnswerch()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 10</h3>
+
+        <flash-card [isFlipped]="flashCarFlipped">
+            <div class="flash-card-front"><img src="./assets/imgs/computer.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">computer</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.computer</ion-label>
+                <ion-radio (click)="selectAnswerco()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. Truck</ion-label>
+                <ion-radio (click)="selectAnswerco()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3.chair</ion-label>
+                <ion-radio (click)="selectAnswerco()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 11</h3>
+
+        <flash-card [isFlipped]="flashCadFlipped">
+            <div class="flash-card-front"><img src="./assets/imgs/dress.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">dress</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.dress</ion-label>
+                <ion-radio (click)="selectAnswerdr()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2.computer</ion-label>
+                <ion-radio (click)="selectAnswerdr()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. Plane</ion-label>
+                <ion-radio (click)="selectAnswerdr()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+
+    
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 12</h3>
+
+        <flash-card [isFlipped]="flashCrdFlipped">
+            <div class="flash-card-front"><img src="./assets/imgs/house.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">House</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.House</ion-label>
+                <ion-radio (click)="selectAnswerhou()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. Truck</ion-label>
+                <ion-radio (click)="selectAnswerhou()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. computer</ion-label>
+                <ion-radio (click)="selectAnswerhou()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 13</h3>
+
+        <flash-card [isFlipped]="flashardFlipped">
+            <div class="flash-card-front"><img src="./assets/imgs/pen.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">pens</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.pens</ion-label>
+                <ion-radio (click)="selectAnswerpen()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. Truck</ion-label>
+                <ion-radio (click)="selectAnswerpen()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. House</ion-label>
+                <ion-radio (click)="selectAnswerpen()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 14</h3>
+
+        <flash-card [isFlipped]="flasCardFlipped">
+            <div class="flash-card-front"><img src="./assets/imgs/pencil.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">pencils</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.pencils</ion-label>
+                <ion-radio (click)="selectAnswerpenc()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. House</ion-label>
+                <ion-radio (click)="selectAnswerpenc()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. Plane</ion-label>
+                <ion-radio (click)="selectAnswerpenc()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 15</h3>
+
+        <flash-card [isFlipped]="flahCardFlipped">
+            <div class="flash-card-front"><img src="./assets/imgs/rubber.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">Rubber</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.Rubber</ion-label>
+                <ion-radio (click)="selectAnswerru()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. Truck</ion-label>
+                <ion-radio (click)="selectAnswerru()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. Plane</ion-label>
+                <ion-radio (click)="selectAnswerru()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 16</h3>
+
+        <flash-card [isFlipped]="flshCardFlipped">
+            <div class="flash-card-front"><img src="./assets/imgs/school.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">School</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.School</ion-label>
+                <ion-radio (click)="selectAnswersch()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. House</ion-label>
+                <ion-radio (click)="selectAnswersch()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. Plane</ion-label>
+                <ion-radio (click)="selectAnswersch()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 17</h3>
+
+        <flash-card [isFlipped]="fashCardFlipped">
+            <div class="flash-card-front"><img src="./assets/imgs/phone.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">Phone</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.Phone</ion-label>
+                <ion-radio (click)="selectAnswerph()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. TV</ion-label>
+                <ion-radio (click)="selectAnswerph()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. House</ion-label>
+                <ion-radio (click)="selectAnswerph()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 18</h3>
+
+        <flash-card [isFlipped]="lashCardFlipped">
+            <div class="flash-card-front"><img src="./assets/imgs/suit.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">Suit</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.Phone</ion-label>
+                <ion-radio (click)="selectAnswersui()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2.TV</ion-label>
+                <ion-radio (click)="selectAnswersui()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3.Suit</ion-label>
+                <ion-radio (click)="selectAnswersui()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 19</h3>
+
+        <flash-card [isFlipped]="fflashCardFlipped">
+            <div class="flash-card-front"><img src="./assets/imgs/TV.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">TV</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.TV</ion-label>
+                <ion-radio (click)="selectAnswertv()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. Watch</ion-label>
+                <ion-radio (click)="selectAnswertv()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. Plane</ion-label>
+                <ion-radio (click)="selectAnswertv()"></ion-radio>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
+<ion-slides #slides>
+
+    <ion-slide>
+
+        <h3>Question 20</h3>
+
+        <flash-card [isFlipped]="fllashCardFlipped">
+            <div class="flash-card-front"><img src="./assets/imgs/watch.png"  width="100" height="100"/></div>
+            <div class="flash-card-back">Watch</div>
+        </flash-card>
+
+        <h3>What is this?</h3>
+
+        <ion-list no-lines radio-group>
+
+            <ion-item>
+
+                <ion-label>1.Watch</ion-label>
+                <ion-radio (click)="selectAnswerwa()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>2. Truck</ion-label>
+                <ion-radio (click)="selectAnswerwa()"></ion-radio>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-label>3. Plane</ion-label>
+                <ion-radio (click)="selectAnswerwa()"></ion-radio>
+
+            </ion-item>
+            <button ion-button color="danger" (click)="Result()">Result</button>
+            <h1>{{Results}} Ponts</h1>
+        </ion-list>
+
+    </ion-slide>
+
+</ion-slides>
 </ion-content>
